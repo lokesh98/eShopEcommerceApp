@@ -1,0 +1,97 @@
+﻿@model UserRegistrationViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="row justify-content-sm-center h-100">
+    <div class="col-xxl-8 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+
+        <div class="card shadow-lg my-2">
+            <div class="card-body p-5">
+                <h1 class="fs-4 card-title fw-bold mb-4 text-center">Register</h1>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <form method="post" asp-action="Register" asp-controller="Account">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label asp-for="Name" class="mb-2 text-muted">Name</label>
+                                <input asp-for="Name" class="form-control" autocomplete="off">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label asp-for="Address" class="mb-2 text-muted">Address</label>
+                                <input asp-for="Address" class="form-control" autocomplete="off">
+                                <span asp-validation-for="Address" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label asp-for="Email" class="mb-2 text-muted">Email</label>
+                                <input asp-for="Email" class="form-control" autocomplete="off">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label asp-for="City" class="mb-2 text-muted">City</label>
+                                <input asp-for="City" class="form-control" autocomplete="off">
+                                <span asp-validation-for="City" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label asp-for="State" class="mb-2 text-muted">State</label>
+                                <input asp-for="State" class="form-control" autocomplete="off">
+                                <span asp-validation-for="State" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label asp-for="PostalCode" class="mb-2 text-muted">Postal/Zip Code</label>
+                                <input asp-for="PostalCode" class="form-control" autocomplete="off">
+                                <span asp-validation-for="PostalCode" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <div class="mb-2 w-100">
+                                    <label class="text-muted" asp-for="Password">Password</label>
+                                </div>
+                                <input asp-for="Password" type="password" class="form-control" autocomplete="off">
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <div class="mb-2 w-100">
+                                    <label class="text-muted" asp-for="ConfirmPassword">ConfirmPassword</label>
+                                </div>
+                                <input asp-for="ConfirmPassword" type="password" class="form-control" autocomplete="off">
+                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="float-end mt-2">
+                        <button type="submit" class="btn btn-primary ms-auto"> Register</button>
+                        <a asp-action="Login" asp-controller="Account" class="btn btn-success ms-auto">Back To Login</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+

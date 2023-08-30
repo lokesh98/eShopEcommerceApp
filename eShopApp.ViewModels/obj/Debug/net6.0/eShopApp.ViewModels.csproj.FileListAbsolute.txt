@@ -1,0 +1,15 @@
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\bin\Debug\net6.0\eShopApp.ViewModels.deps.json
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\bin\Debug\net6.0\eShopApp.ViewModels.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\bin\Debug\net6.0\eShopApp.ViewModels.pdb
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\obj\Debug\net6.0\eShopApp.ViewModels.csproj.AssemblyReference.cache
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\obj\Debug\net6.0\eShopApp.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\obj\Debug\net6.0\eShopApp.ViewModels.AssemblyInfoInputs.cache
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\obj\Debug\net6.0\eShopApp.ViewModels.AssemblyInfo.cs
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\obj\Debug\net6.0\eShopApp.ViewModels.csproj.CoreCompileInputs.cache
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\obj\Debug\net6.0\eShopApp.ViewModels.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\obj\Debug\net6.0\refint\eShopApp.ViewModels.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\obj\Debug\net6.0\eShopApp.ViewModels.pdb
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\obj\Debug\net6.0\ref\eShopApp.ViewModels.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\bin\Debug\net6.0\eShopApp.Models.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\bin\Debug\net6.0\eShopApp.Models.pdb
+D:\Test\9-30AM Core\eShopApp\eShopApp.ViewModels\obj\Debug\net6.0\eShopApp.ViewModels.csproj.CopyComplete

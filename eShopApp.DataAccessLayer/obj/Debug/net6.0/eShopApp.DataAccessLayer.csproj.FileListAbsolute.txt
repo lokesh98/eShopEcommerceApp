@@ -1,0 +1,15 @@
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\bin\Debug\net6.0\eShopApp.DataAccessLayer.deps.json
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\bin\Debug\net6.0\eShopApp.DataAccessLayer.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\bin\Debug\net6.0\eShopApp.DataAccessLayer.pdb
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\bin\Debug\net6.0\eShopApp.Models.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\bin\Debug\net6.0\eShopApp.Models.pdb
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\obj\Debug\net6.0\eShopApp.DataAccessLayer.csproj.AssemblyReference.cache
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\obj\Debug\net6.0\eShopApp.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\obj\Debug\net6.0\eShopApp.DataAccessLayer.AssemblyInfoInputs.cache
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\obj\Debug\net6.0\eShopApp.DataAccessLayer.AssemblyInfo.cs
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\obj\Debug\net6.0\eShopApp.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\obj\Debug\net6.0\eShopApp.DataAccessLayer.csproj.CopyComplete
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\obj\Debug\net6.0\eShopApp.DataAccessLayer.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\obj\Debug\net6.0\refint\eShopApp.DataAccessLayer.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\obj\Debug\net6.0\eShopApp.DataAccessLayer.pdb
+D:\Test\9-30AM Core\eShopApp\eShopApp.DataAccessLayer\obj\Debug\net6.0\ref\eShopApp.DataAccessLayer.dll

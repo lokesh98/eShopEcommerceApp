@@ -1,0 +1,74 @@
+﻿@model ProductViewModel
+@{
+    ViewData["Title"] = "Manage Products";
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h5 mb-0 text-gray-800">@ViewData["Title"]</h1>
+
+        <a asp-action="Create" asp-controller="Product" asp-area="Admin" class=" d-none d-sm-inline-block btn btn-sm btn-primary shadow-smbtn btn-primary">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            Add New
+        </a>
+       
+    </div>
+
+    
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h6 class="m-0 font-weight-bold text-white">List of Products </h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td>SN</td>
+                            <td>Image</td>
+                            <td>Category Name</td>
+                            <td>Product Name</td>
+                            <td>Desc</td>
+                            <td>Price</td>
+                            <td>Qty</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.ProductList.Any())
+                        {
+                            int counter = 1;
+                            foreach (var item in Model.ProductList)
+                            {
+                                string imgUrl = @Url.Content("~/product_img/" + item.ProductImage);
+                                <tr>
+                                    <td>@counter</td>
+                                    <td>
+                                        <img height="90" width="80" src="@imgUrl" />
+                                    </td>
+                                    <td>@item.Category.CategoryName</td>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.ProductDescription</td>
+                                    <td>@item.Price</td>
+                                    <td>@item.StockQty</td>
+                                    <td>
+                                        <a title="Edit Product" class="btn btn-primary btn-sm" asp-action="Edit" asp-controller="Product" asp-area="Admin" asp-route-productId="@item.ProductId">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </a>
+                                        <a title="Delete Product" class="btn btn-danger btn-sm" asp-action="DeleteProduct" asp-controller="Product" asp-area="Admin" asp-route-productId="@item.ProductId">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                counter++;
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

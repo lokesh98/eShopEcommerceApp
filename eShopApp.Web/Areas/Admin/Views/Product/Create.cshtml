@@ -1,0 +1,100 @@
+﻿@model ProductViewModel
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h5 mb-0 text-gray-800"></h1>
+
+        <a asp-action="Index" asp-controller="Product" asp-area="Admin" class=" d-none d-sm-inline-block btn btn-sm btn-primary shadow-smbtn btn-primary">
+            <i class="fa fa-undo" aria-hidden="true"></i>
+
+            Back To List
+        </a>
+
+    </div>
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h6 class="m-0 font-weight-bold text-white">@ViewData["Title"] </h6>
+        </div>
+        <div class="card-body">
+            <form enctype="multipart/form-data" method="post" asp-action="Create" asp-controller="Product">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="mb-2">
+                            <label>Category</label>
+                            <select asp-for="Product.CategoryId" class="form-control form-select form-select-lg mb-3" asp-items="Model.Categories">
+                            </select>
+                            <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label>Product Name</label>
+                            <input asp-for="Product.ProductName" class="form-control" />
+                            <span asp-validation-for="Product.ProductName" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-2">
+                            <label>Description</label>
+                            <input asp-for="Product.ProductDescription" class="form-control" />
+                        </div>
+                        <div class="mb-2">
+                            <label>Price</label>
+                            <input asp-for="Product.Price" class="form-control" />
+                            <span asp-validation-for="Product.Price" class="text-danger"></span>
+                        </div>
+                        <div class="mb-2">
+                            <label>Qty</label>
+                            <input asp-for="Product.StockQty" class="form-control" />
+                            <span asp-validation-for="Product.StockQty" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="4">
+                        <div class="mb-2">
+                            <img src="~/product_img/default.png" id="imgPreview" height="300" width="320" />
+                        </div>
+                        <div class="mb-2">
+                            <label asp-for="ProductImageFile" class="form-label">Image</label>
+                            <input onchange="previewImage(event)" asp-for="ProductImageFile" class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mb-2">
+                    <button type="submit" class="btn btn-info w-100">Create</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script type="text/javascript">
+
+        function previewImage(event) {
+            debugger;
+
+            var fileInput = event.target;
+            const imgContainer = document.getElementById('imgPreview');
+            if (fileInput.files && fileInput.files[0]) {
+
+                var reader = new FileReader();
+
+                reader.onload = function (_evnt) {
+                    imgContainer.src = _evnt.target.result;
+                    imgContainer.style.display = 'block';
+                }
+                reader.readAsDataURL(fileInput.files[0])
+            } else {
+                imgContainer.src = '';
+                imgContainer.style.display = 'none';
+            }
+        }
+    </script>
+}

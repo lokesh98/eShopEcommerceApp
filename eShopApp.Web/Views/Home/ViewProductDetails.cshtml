@@ -1,0 +1,50 @@
+﻿@using eShopApp.Models;
+@model CartItem
+
+<style type="text/css">
+    .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+    }
+</style>
+<div class="container-fluid">
+    <div class="row mt-5">
+        <form method="post" >
+            <div class="col-5 offset-3">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4>@Model.Product.Category.CategoryName</h4>
+                        <input type="hidden" asp-for="ProductId" />
+                    </div>
+                    <div class="card-body">
+                        @{
+                            string imgUrl = @Url.Content("~/product_img/" + @Model.Product.ProductImage);
+                        }
+                        <img src="@imgUrl" height="200">
+                        <p class="card-text">
+                            <strong>Product Name:</strong> @Model.Product.ProductName<br />
+                            <strong>Product Desc:</strong> @Model.Product.ProductDescription<br />
+                            <strong>Price:</strong> @Model.Product.Price.ToString("0.00")
+                        </p>
+                    </div>
+                    <div class="card-footer bg-secondary">
+                        <div class="row mb-2">
+                            <label class="col-3">Count</label>
+                            <div class="col-9">
+                                <input asp-for="Count" class="form-control" />
+                            </div>
+
+                        </div>
+                        <div class="mb-2 text-center">
+                            <button class="btn btn-primary">Add To Cart</button>
+                            <button class="btn btn-danger">Back To Home</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+

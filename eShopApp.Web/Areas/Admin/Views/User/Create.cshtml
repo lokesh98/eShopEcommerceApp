@@ -1,0 +1,79 @@
+﻿@model AdminUserViewModel
+@{
+    ViewData["Title"] = "Create User";
+}
+
+<div class="container-fluid">
+    <a asp-action="Index" asp-controller="User" asp-area="Admin" class="btn btn-primary text-end">Back To List</a>
+
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h6 class="m-0 font-weight-bold text-white">@ViewData["Title"] </h6>
+        </div>
+        <div class="card-body">
+            <form method="post" asp-action="Create" asp-controller="User">
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <label>Email</label>
+                        <input asp-for="UserDetails.Email" class="form-control" />
+                        <span asp-validation-for="UserDetails.Email" class="text-danger"></span>
+                    </div>
+                    <div class="col-6">
+                        <label>Password</label>
+                        <input asp-for="UserDetails.Password" class="form-control" />
+                        <span asp-validation-for="UserDetails.Password" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <label>Role</label>
+                        <select asp-for="CurrentUserRole" class="form-control form-select form-select-lg mb-3" asp-items="Model.UserRoles">
+                        </select>
+                        <span asp-validation-for="CurrentUserRole" class="text-danger"></span>
+                    </div>
+                    <div class="col-6">
+                        <label>Name</label>
+                        <input asp-for="UserDetails.Name" class="form-control" />
+                        <span asp-validation-for="UserDetails.Name" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <label>Address</label>
+                        <input asp-for="UserDetails.Address" class="form-control" />
+                        <span asp-validation-for="UserDetails.Address" class="text-danger"></span>
+                    </div>
+                    <div class="col-6">
+                        <label>City</label>
+                        <input asp-for="UserDetails.City" class="form-control" />
+                        <span asp-validation-for="UserDetails.City" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-6">
+                        <label>State</label>
+                        <input asp-for="UserDetails.State" class="form-control" />
+                        <span asp-validation-for="UserDetails.State" class="text-danger"></span>
+                    </div>
+                    <div class="col-6">
+                        <label>Zip/Postal Code</label>
+                        <input asp-for="UserDetails.PostalCode" class="form-control" />
+                        <span asp-validation-for="UserDetails.PostalCode" class="text-danger"></span>
+                    </div>
+                </div>
+                
+                <div class="row mb-2">
+                    <button type="submit" class="btn btn-info w-100">Create</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

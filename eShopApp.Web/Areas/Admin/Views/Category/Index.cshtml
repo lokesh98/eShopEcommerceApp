@@ -1,0 +1,55 @@
+﻿@model IEnumerable<CategoryViewModel>
+@{
+    ViewData["Title"] = "Manage Category";
+}
+
+<div class="container-fluid">
+    <a asp-action="Create" asp-controller="Category" asp-area="Admin" class="btn btn-primary">Add New</a>
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h6 class="m-0 font-weight-bold text-white">@ViewData["Title"]</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td>SN</td>
+                            <td>Category Name</td>
+                            <td>Desc</td>
+                            <td>Display Order</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Any())
+                        {
+                            int counter = 1;
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@counter</td>
+                                    <td>@item.CategoryName</td>
+                                    <td>@item.CategoryDescription</td>
+                                    <td>@item.DisplayOrder</td>
+                                    <td>
+                                        <a title="Edit Category" class="btn btn-primary btn-sm" asp-action="Edit" asp-controller="Category" asp-area="Admin" asp-route-categoryId="@item.Id">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        </a>
+                                        <a title="Delete Category" class="btn btn-danger btn-sm" asp-action="DeleteCategory" asp-controller="Category" asp-area="Admin" asp-route-categoryId="@item.Id">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                counter++;
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,178 @@
+﻿@model CartItemsViewModel
+@{
+    ViewData["Title"] = "Manage Carts";
+}
+
+<script src="https://www.paypal.com/sdk/js?client-id=@ViewBag.ClientId&currency=USD"></script>
+<div class="container">
+
+    <div class="row">
+        <div class="card ">
+            <div class="card-header bg-primary">
+                <h5>Billing Address</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mb-2">
+                            <label class="control-label">Address</label>
+                            <input asp-for="OrderHeader.BillingAddress" class="form-control form-control-sm" readonly />
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-2">
+                            <label>City</label>
+                            <input asp-for="OrderHeader.BillingCity" class="form-control form-control-sm" readonly />
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-2">
+                            <label>State</label>
+                            <input asp-for="OrderHeader.BillingState" class="form-control form-control-sm" readonly />
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-2">
+                            <label>Zip Code</label>
+                            <input asp-for="OrderHeader.BillingPostalCode" class="form-control form-control-sm" readonly />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer bg-info"></div>
+        </div>
+
+    </div>
+
+    <hr />
+    <div class="row">
+        <div class="col-9">
+            <h5>@ViewData["Title"]</h5>
+        </div>
+        <div class="col-6"></div>
+    </div>
+    <div class="row">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <td>SN</td>
+                    <td>Product</td>
+                    <td>Qty</td>
+                    <td>Price</td>
+                    <td>Total</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.ListOfCartItems.Any())
+                {
+                    int counter = 1;
+
+                    foreach (var item in Model.ListOfCartItems)
+                    {
+                        var itemTotal = item.Count * item.Product.Price;
+                        string imgUrl = @Url.Content("~/product_img/" + item.Product.ProductImage);
+                        <tr>
+                            <td>@counter</td>
+                            <td>
+                                <img height="90" width="80" src="@imgUrl" />
+                            </td>
+                            <td>
+                                @item.Count
+                            </td>
+                            <td>@item.Product.Price.ToString("C")</td>
+                            <td>@itemTotal.ToString("C")</td>
+                            <td>
+                                <a title="Add more item" class="btn btn-primary btn-sm" asp-action="Edit" asp-route-productId="@item.ProductId">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+                                <a title="Decrease item" class="btn btn-primary btn-sm" asp-action="Edit" asp-route-productId="@item.ProductId">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                </a>
+                                <a title="Remove item" class="btn btn-danger btn-sm" asp-action="DeleteProduct" asp-route-productId="@item.ProductId">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        counter++;
+                    }
+                    if (counter > 1)
+                    {
+                        <tr>
+                            <td colspan="3"></td>
+                            <td><b>Total Price (USD)</b></td>
+                            <td>
+                                <b>@Model.OrderHeader.OrderTotal.ToString("C")</b>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td>
+                                <div id="paypal-button-container"></div>
+                                <a asp-action="Index" asp-controller="Home" class="btn btn-danger w-100">Return To Home</a>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    paypal.Buttons({
+        style: {
+            layout: 'vertical',
+            color: 'blue',
+            shape: 'rect',
+            label: 'paypal'
+        },
+        createOrder() {
+            // This function sets up the details of the transaction, including the amount and line item details.
+            return fetch("/Payment/ProceedPayment", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: {}
+            }).then((response) => {
+                if (!response.ok) {
+                    return response.json().then(
+                        error => {
+                            alert(error.message)
+                        }
+                    );
+                }
+                return response.json();
+            }).then((order) => order.id)
+        },
+        onApprove(data) {
+            // This function captures the funds from the transaction.
+            return fetch("/Payment/CapturePayment?orderID=" + data.orderID, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                }
+
+            })
+                .then((response) => response.json())
+                .then((details) => {
+
+                    window.location.href = '/Payment/Success?orderID=' + data.orderID;
+                    //// This function shows a transaction success message to your buyer.
+                    //alert('Transaction completed by ' + details.payer.name.given_name);
+                });
+        },
+        onError(err) {
+            // For example, redirect to a specific error page
+            alert("Failed to proceed with checkout..");
+        }
+
+
+    }).render('#paypal-button-container');
+</script>
