@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fMCuXhWhH4K7FwWpmCi1QK4ybpqcGmy8GMNJmgWelnw7d77xKI7lR5Vf/rnQ1gYBZM3Qx8CMLbKm/y2HrjIjcQ==",
+  "dgSpecHash": "z1q3V0DP/v3AOucl+bukutNdle/Z3grgLl3zb0AYkd+rZGfiPFWQXw1xoUcMZ4m9keBjBxhqwohxDaj2rkIMpg==",
   "success": true,
   "projectFilePath": "D:\\Test\\9-30AM Core\\eShopApp\\eShopApp.Utility\\eShopApp.Utility.csproj",
   "expectedPackageFiles": [
@@ -38,9 +38,9 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512"
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512"
   ],
   "logs": []
 }

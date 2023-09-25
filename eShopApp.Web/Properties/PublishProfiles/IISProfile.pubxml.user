@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>
+    </EncryptedPassword>
+    <History>True|2023-09-05T05:04:34.0813679Z;False|2023-09-05T10:47:03.0338638+05:45;True|2023-09-05T10:42:09.8417071+05:45;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=SQL5073.site4now.net%3b User Id=db_a9e80b_lokenchand_admin%3b Password=%40f4A!vxjqA6vff3%3b Initial Catalog = db_a9e80b_lokenchand%3b TrustServerCertificate=true%3b MultipleActiveResultSets = true%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="eShopApp.DataAccessLayer.Data.ApplicationDbContext">
+      <Value>Data Source=SQL5073.site4now.net%3b User Id=db_a9e80b_lokenchand_admin%3b Password=%40f4A!vxjqA6vff3%3b Initial Catalog = db_a9e80b_lokenchand%3b TrustServerCertificate=true%3b MultipleActiveResultSets = true%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

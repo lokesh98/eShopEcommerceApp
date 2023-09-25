@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\Test\9-30AM Core\eShopApp\eShopApp.Web\obj\Release\net6.0\PubTmp\Out\" />
+  <dbfullsql path="D:\Test\9-30AM Core\eShopApp\eShopApp.Web\obj\Release\net6.0\PubTmp\EFSQLScripts\eShopApp.DataAccessLayer.Data.ApplicationDbContext.sql" />
+</sitemanifest>

@@ -1,0 +1,12 @@
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\bin\Release\net6.0\eShopApp.Utility.deps.json
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\bin\Release\net6.0\eShopApp.Utility.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\bin\Release\net6.0\eShopApp.Utility.pdb
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\obj\Release\net6.0\eShopApp.Utility.csproj.AssemblyReference.cache
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\obj\Release\net6.0\eShopApp.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\obj\Release\net6.0\eShopApp.Utility.AssemblyInfoInputs.cache
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\obj\Release\net6.0\eShopApp.Utility.AssemblyInfo.cs
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\obj\Release\net6.0\eShopApp.Utility.csproj.CoreCompileInputs.cache
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\obj\Release\net6.0\eShopApp.Utility.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\obj\Release\net6.0\refint\eShopApp.Utility.dll
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\obj\Release\net6.0\eShopApp.Utility.pdb
+D:\Test\9-30AM Core\eShopApp\eShopApp.Utility\obj\Release\net6.0\ref\eShopApp.Utility.dll

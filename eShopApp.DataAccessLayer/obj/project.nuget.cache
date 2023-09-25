@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ug68u7PIyN1KL+O1gzKEsePj+3YyOxVkr9YpmyvH27zZUUSM/KwZBBNDhY+WaGTAhwPeWkhFdPFbKZ6V8E0APw==",
+  "dgSpecHash": "5egZo/J3ktVxk9kRbpvowhbu+jMS+qcP0x6o6EvWf71RJMMCtM8kRTNX6wTlb40EZgLMMM5nv/FeDRRpdiwMPg==",
   "success": true,
   "projectFilePath": "D:\\Test\\9-30AM Core\\eShopApp\\eShopApp.DataAccessLayer\\eShopApp.DataAccessLayer.csproj",
   "expectedPackageFiles": [
@@ -120,9 +120,9 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512"
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512"
   ],
   "logs": []
 }

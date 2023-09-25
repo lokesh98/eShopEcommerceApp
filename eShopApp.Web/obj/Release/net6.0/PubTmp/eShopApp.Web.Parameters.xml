@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="lokenchand-001-site1" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Test\\9-30AM\ Core\\eShopApp\\eShopApp\.Web\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="eShopApp.DataAccessLayer.Data.ApplicationDbContext" description="" value="Data Source=SQL5073.site4now.net; User Id=db_a9e80b_lokenchand_admin; Password=@f4A!vxjqA6vff3; Initial Catalog = db_a9e80b_lokenchand; TrustServerCertificate=true; MultipleActiveResultSets = true;" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^D:\\Test\\9-30AM\ Core\\eShopApp\\eShopApp\.Web\\obj\\Release\\net6\.0\\PubTmp\\EFSQLScripts\\eShopApp\.DataAccessLayer\.Data\.ApplicationDbContext\.sql$" />
+  </parameter>
+</parameters>
