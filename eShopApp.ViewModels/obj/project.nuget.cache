@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2tl3aCEbmHoUhu9/CGdOYaEYjyCQy8rH1frJ5ZhgpBCPm8Eapl2N4dWTM9deufOWciestMD8I9jRzV0IGvLMYQ==",
+  "dgSpecHash": "H0cEzd8BS6BcAIcoSsV78qzWERwiutJVkLdYpB1NWvooz/B3T7AjYRIoD10K9FaOYwlCCEroWZEL9dxG269CEQ==",
   "success": true,
   "projectFilePath": "D:\\Test\\9-30AM Core\\eShopApp\\eShopApp.ViewModels\\eShopApp.ViewModels.csproj",
   "expectedPackageFiles": [
@@ -142,10 +142,7 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512"
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
